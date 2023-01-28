@@ -1,6 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Space+Mono:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+header {
+  @apply w-full h-16 bg-blue-500 text-white;
+}
+
+main {
+  @apply w-full max-w-screen-xl h-full mx-auto flex;
+}
+
+section {
+  @apply px-4 py-4 grow;
+}
+
+.app {
+  @apply w-full h-screen flex flex-col font-poppins;
+}
+
+.navbar {
+  @apply w-full max-w-screen-xl h-full mx-auto px-3 flex items-center justify-between;
+}
+
+.layout {
+  @apply w-full grow;
+}
+
+/* Menu */
+.menu {
+  @apply fixed top-16 bottom-0 -right-full w-full max-w-xs bg-gray-100 text-black border-l border-gray-300 divide-y divide-gray-300 duration-300;
+}
+.menu-active {
+  @apply right-0;
+}
+/* Menu link */
+.menu-link {
+  @apply w-full px-3 py-3 flex items-center gap-2; 
+}
+/* Menu button */
+.menu-btn {
+  @apply w-8 h-8 relative flex flex-col justify-around;
+}
+.menu-btn span {
+  @apply absolute w-full h-1 block bg-stone-100 duration-150 rounded-full;
+}
+.menu-btn span:nth-child(1) {
+  @apply mb-4;
+}
+.menu-btn span:nth-child(3) {
+  @apply mt-4;
+}
+.menu-btn-active span:nth-child(1) {
+  @apply mb-0 rotate-45;
+}
+.menu-btn-active span:nth-child(2) {
+  @apply hidden;
+}
+.menu-btn-active span:nth-child(3) {
+  @apply mt-0 -rotate-45;
+}
+
+/* Sidebar */
+.sidebar {
+  @apply w-32 lg:w-40 xl:w-44 bg-gray-100 flex flex-col flex-none border-x border-gray-300 divide-y divide-gray-300;
+}
+.sidebar-link {
+  @apply px-3 py-2 w-full flex flex-col items-center duration-300 hover:text-yellow-500;
+}
+.sidebar-link i {
+  @apply w-10 h-10 flex items-center justify-center flex-none text-xl ;
+}
+.sidebar-link h3 {
+  @apply px-3 py-1 text-center leading-4;
+}
 
 .debug {
   @apply border border-red-500;
