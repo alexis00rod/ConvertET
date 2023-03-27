@@ -1,3 +1,4 @@
+import { Calculator } from "./Calculator/Calculator";
 import { ConvertLength } from "./ConvertLength/ConvertLength";
 import { ConvertMoney } from "./ConvertMoney/ConvertMoney";
 import { ConvertTemperature } from "./ConvertTemperature/ConvertTemperature";
@@ -7,4 +8,4 @@ import { ConvertWeight } from "./ConvertWeight/ConvertWeight";
 import { Home } from "./Home/Home";
 import { Translate } from "./Translate/Translate";
 
-export {Home,ConvertWeight,ConvertLength,ConvertTime,ConvertTemperature,Translate,ConvertMoney,ConvertVolume}
+export {Home,Calculator,ConvertWeight,ConvertLength,ConvertTime,ConvertTemperature,Translate,ConvertMoney,ConvertVolume}
