@@ -64,16 +64,29 @@ section {
 
 /* Sidebar */
 .sidebar {
-  @apply w-32 lg:w-40 xl:w-44 bg-gray-100 flex flex-col flex-none border-x border-gray-300 divide-y divide-gray-300;
+  @apply w-max py-2 bg-gray-100 border border-gray-300 divide-y divide-gray-300;
 }
 .sidebar-link {
-  @apply px-3 py-2 w-full flex flex-col items-center duration-300 hover:text-yellow-500;
+  @apply w-full px-2 py-2 flex items-center gap-2 duration-300 hover:text-yellow-500;
 }
 .sidebar-link i {
-  @apply w-10 h-10 flex items-center justify-center flex-none text-xl ;
+  @apply w-6 h-6 flex items-center justify-center;
 }
 .sidebar-link h3 {
-  @apply px-3 py-1 text-center leading-4;
+  @apply text-sm;
+}
+
+/* Select */
+.select {
+  @apply relative h-full grow;
+}
+.select select {
+  @apply w-full h-full px-2 outline-none appearance-none cursor-pointer;
+}
+.select::after {
+  content: '\f078';
+  font-family: 'Font Awesome 5 Free';
+  @apply absolute top-0 bottom-0 right-0 w-8 h-full flex items-center justify-center text-sm font-black pointer-events-none;
 }
 
 .debug {

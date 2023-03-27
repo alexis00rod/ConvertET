@@ -6,6 +6,6 @@ export const ConvertTemperature = () => {
   },[])
   
   return (
-    <div>Conversion de temperatura</div>
+    <h2>Conversion de temperatura</h2>
   )
 }

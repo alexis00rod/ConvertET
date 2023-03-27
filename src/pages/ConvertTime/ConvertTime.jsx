@@ -6,6 +6,6 @@ export const ConvertTime = () => {
   },[])
   
   return (
-    <div>Conversion de tiempo</div>
+    <h2>Conversion de tiempo</h2>
   )
 }

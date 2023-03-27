@@ -6,6 +6,6 @@ export const ConvertWeight = () => {
   },[])
   
   return (
-    <div>Conversion de peso</div>
+    <h2>Conversion de peso</h2>
   )
 }

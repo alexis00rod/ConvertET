@@ -6,6 +6,6 @@ export const ConvertLength = () => {
   },[])
   
   return (
-    <div>Conversion de longitud</div>
+    <h2>Conversion de longitud</h2>
   )
 }
