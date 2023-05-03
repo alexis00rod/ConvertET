@@ -89,9 +89,18 @@ section {
   @apply absolute top-0 bottom-0 right-0 w-8 h-full flex items-center justify-center text-sm font-black pointer-events-none;
 }
 
-/* Calculador */
-.calculator-btn {
-  @apply  w-full h-10 px-2 flex items-center justify-center text-white font-semibold duration-300;
+/* Button */
+.btn {
+  @apply w-full h-10 px-2 flex items-center justify-center text-white font-semibold duration-300;
+}
+.btn-blue {
+  @apply bg-blue-500
+}
+.btn-gray {
+  @apply bg-gray-500
+}
+.btn-gray-light {
+  @apply bg-gray-400
 }
 
 .debug {
